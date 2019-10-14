@@ -1,0 +1,356 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Installing Clover on macOS · Knowledge Base</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Installing Clover on macOS · Knowledge Base" />
+        <meta property="og:description" content="macOS from Windows install guide on Knowledge Base." />
+        <meta property="og:url" content="https://kb.amd-osx.com />
+        <meta property="og:image" content="https://amd-osx.com/kb/images/icon/KBApple.png" />
+        <meta name="theme-color" content="#347db5"/>
+        <meta name="description" content="macOS from Windows install guide on Knowledge Base."/>
+        
+        
+        
+    
+    <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://kb.amd-osx.com/guides/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://kb.amd-osx.com/guides/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="configuring-clover.html" />
+    
+    
+    <link rel="prev" href="../setting-up-clover-for-amd-vanilla/kexts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome to AMD OS X Vanilla
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-the-macos-installer.html">
+            
+                <a href="../getting-the-macos-installer.html">
+            
+                    
+                    Getting the macOS Installer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../creating-the-macos-install-usb.html">
+            
+                <a href="../creating-the-macos-install-usb.html">
+            
+                    
+                    Creating the macOS Install USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../setting-up-clover-for-amd-vanilla/">
+            
+                <a href="../setting-up-clover-for-amd-vanilla/">
+            
+                    
+                    Setting up Clover for AMD Vanilla
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../setting-up-clover-for-amd-vanilla/kexts.html">
+            
+                <a href="../setting-up-clover-for-amd-vanilla/kexts.html">
+            
+                    
+                    Kexts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Installing Clover on macOS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="configuring-clover.html">
+            
+                <a href="configuring-clover.html">
+            
+                    
+                    Configuring Clover
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+    
+    
+            <li class="chapter " data-level="1.6" data-path="conclusion.html">
+            
+                <a href="../conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+
+    
+
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Installing Clover on macOS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="installing-clover-on-macos">Installing Clover on macOS</h1>
+<p>Once your system is installed you won&apos;t want to boot with the USB drive each time...<br>We will now assume you are reading this now from your macOS desktop.</p>
+<h3 id="installing-clover">Installing Clover.</h3>
+<p>The most complete Hackintosh Bootloader. Boot OS X, Windows, and Linux on Mac or PC with UEFI or BIOS firmware.</p>
+<p>Download the latest Clover package from <a href="https://sourceforge.net/projects/cloverefiboot/" target="_blank">here</a>...</p>
+<h3 id="clover-installer-configuration">Clover Installer Configuration.</h3>
+<p>From there you need to follow the steps on the installer but use the Customise option to correctly install for your System. Use the settings below,</p>
+<p><strong>UEFI Motherboard Settings</strong></p>
+<ul>
+<li>Install Clover for UEFI only</li>
+<li>Install Clover in ESP</li>
+<li>UEFIDrivers: AptioMemoryFix - PartitionDxe - ApfsLoader, don&apos;t touch the pre-ticked options</li>
+<li>Install RC Scripts on target volume</li>
+</ul>
+<p><strong>Legacy Motherboard Settings</strong></p>
+<ul>
+<li>Install Clover in ESP</li>
+<li>Boot0ss</li>
+<li>Clover EFI Sata</li>
+<li>Bios Drivers, 64 bit: ApfsLoader</li>
+<li>Install RC Scripts on target volume</li>
+</ul>
+<p>Now to configure Clover for your System...</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../setting-up-clover-for-amd-vanilla/kexts.html" class="navigation navigation-prev " aria-label="Previous page: Kexts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="configuring-clover.html" class="navigation navigation-next " aria-label="Next page: Configuring Clover">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Installing Clover on macOS","level":"1.5","depth":1,"next":{"title":"Configuring Clover","level":"1.5.1","depth":2,"path":"installing-clover-on-macos/configuring-clover.md","ref":"installing-clover-on-macos/configuring-clover.md","articles":[]},"previous":{"title":"Kexts","level":"1.4.1","depth":2,"path":"setting-up-clover-for-amd-vanilla/kexts.md","ref":"setting-up-clover-for-amd-vanilla/kexts.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"installing-clover-on-macos/README.md","mtime":"2019-04-23T23:01:50.891Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-23T23:26:19.107Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="https://kb.amd-osx.com/guides/gitbook/gitbook.js"></script>
+    <script src="https://kb.amd-osx.com/guides/gitbook/theme.js"></script>
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

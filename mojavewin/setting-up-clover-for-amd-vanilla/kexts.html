@@ -1,0 +1,368 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Kexts · Knowledge Base</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Kexts · Knowledge Base" />
+        <meta property="og:description" content="macOS from Windows install guide on Knowledge Base." />
+        <meta property="og:url" content="https://kb.amd-osx.com/" />
+        <meta property="og:image" content="https://amd-osx.com/kb/images/icon/KBApple.png" />
+        <meta name="theme-color" content="#347db5"/>
+        <meta name="description" content="macOS from Windows install guide on Knowledge Base."/>
+        
+        
+        
+    
+    <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://kb.amd-osx.com/guides/gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="https://kb.amd-osx.com/guides/gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../installing-clover-on-macos/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Welcome to AMD OS X Vanilla
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-the-macos-installer.html">
+            
+                <a href="../getting-the-macos-installer.html">
+            
+                    
+                    Getting the macOS Installer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../creating-the-macos-install-usb.html">
+            
+                <a href="../creating-the-macos-install-usb.html">
+            
+                    
+                    Creating the macOS Install USB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Setting up Clover for AMD Vanilla
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="kexts.html">
+            
+                <a href="kexts.html">
+            
+                    
+                    Kexts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../installing-clover-on-macos/">
+            
+                <a href="../installing-clover-on-macos/">
+            
+                    
+                    Installing Clover on macOS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../installing-clover-on-macos/configuring-clover.html">
+            
+                <a href="../installing-clover-on-macos/configuring-clover.html">
+            
+                    
+                    Configuring Clover
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="conclusion.html">
+            
+                <a href="../conclusion.html">
+            
+                    
+                    Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Kexts</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="kexts">Kexts</h1>
+<h2 id="what-kexts-do-you-need">What kexts do you need?</h2>
+<h4 id="what-is-absolutely-required">What is absolutely required?</h4>
+<p><a href="https://github.com/acidanthera/VirtualSMC" target="_blank"><em>VirtualSMC.kext</em></a> (Or <a href="https://github.com/RehabMan/OS-X-FakeSMC-kozlek" target="_blank">FakeSMC.kext</a>) is as aforementioned essential. This kext is what tells macOS &quot;Yes this is a real Mac&quot;, emulating the functionality of the SMC on real Mac&apos;s. Without it, no Hackintosh.</p>
+<p><a href="https://github.com/corpnewt/NullCPUPowerManagement" target="_blank"><em>NullCPUPowerManagement.kext</em></a> <em>-</em> This kext disables CPU Power Management, as that is not supported on AMD chips.</p>
+<h3 id="where-can-i-find-these-kexts">Where can I find these kexts?</h3>
+<p>All the kexts shown here are available for download on the <a href="https://1drv.ms/f/s!AiP7m5LaOED-m-J8-MLJGnOgAqnjGw" target="_blank"><em><strong>kext repo</strong></em></a>provided and maintained by Goldfish64. All these kexts are automagically built when a new kext update is commited.</p>
+<h3 id="ethernet">Ethernet</h3>
+<ul>
+<li><em>&#x200B;</em><a href="https://github.com/Mieze/IntelMausiEthernet" target="_blank"><em>IntelMausiEthernet.kext</em></a> - this works with most newer Intel LAN chipsets</li>
+<li><a href="https://sourceforge.net/projects/osx86drivers/" target="_blank"><em>AppleIntelE1000e.kext</em></a> - this works with older Intel LAN chipsets - but can cause KPs on newer chipsets</li>
+<li><em>&#x200B;</em><a href="https://github.com/Mieze/AtherosE2200Ethernet" target="_blank"><em>AtherosE2200Ethernet.kext</em></a> - this works for most Atheros or Killer networking chipsets</li>
+<li><em>&#x200B;</em><a href="https://github.com/Mieze/RTL8111_driver_for_OS_X" target="_blank"><em>RealtekRTL8111.kext</em></a> - this works with most gigabit Realtek LAN chipsets</li>
+<li><em>&#x200B;</em><a href="https://github.com/Mieze/RealtekRTL8100" target="_blank"><em>RealtekRTL8100.kext</em></a> - for 10/100 Realtek LAN chipsets</li>
+<li><em>&#x200B;</em><a href="https://cdn.discordapp.com/attachments/390417931659378688/556912824228773888/SmallTree-Intel-211-AT-PCIe-GBE.kext.zip" target="_blank"><em>SmallTree-Intel-211-AT-PCIe-GBE.kext</em></a> - for Intel I211-AT and related chipsets</li>
+</ul>
+<h3 id="graphics">Graphics</h3>
+<ul>
+<li><a href="https://github.com/acidanthera/WhateverGreen" target="_blank"><em>Whatevergreen.kext</em> </a><em>-</em> this kext fixes a lot of GPU related issues.</li>
+<li><a href="https://github.com/acidanthera/Lilu" target="_blank"><em>Lilu.kext</em></a> <em>-</em> this kext acts as a loader for other kexts. More specifically it can patch kexts, processes and libraries.</li>
+</ul>
+<h3 id="wifi-and-bluetooth-">WiFi and Bluetooth <a id="wifi-and-bluetooth"></a></h3>
+<p>(I myself don&apos;t use bluetooth nor WiFi so I don&apos;t have knowledge in that, but here is some information on the subject by CorpNewt. <em>Check <strong>Credits</strong> for more info</em>)  </p>
+<p><code>Apple is pretty minimal with their WiFi support, so I&apos;ll only cover the two main chipsets I&apos;m familiar with. I&apos;ve used a BCM94360CD + PCIe adapter, and BCM94352HMB/BCM94352Z in my Hackintoshes. The BCM94360CD worked OOB with no extras as it&apos;s a native card. For the BCM94352 flavors, I&apos;ve been using</code> <a href="https://github.com/acidanthera/AirportBrcmFixup" target="_blank"><em><code>AirportBrcmFixup.kext</code></em></a> <code>and the companion</code> <a href="https://github.com/vit9696/Lilu/releases" target="_blank"><em><code>Lilu.kext</code></em></a> <code>for WiFi setup and</code> <em><code>BrcmBluetoothInjector.kext</code></em> <code>(on 10.13.6+) or</code> <em><code>BrcmPatchRAM2.kext</code></em> <code>alongside</code> <em><code>BrcmFirmwareData.kext</code></em> <code>- all of the Brcm* kexts are from RehabMan&apos;s</code> <a href="https://github.com/RehabMan/OS-X-BrcmPatchRAM" target="_blank"><em><code>OS-X-BrcmPatchRAM</code></em></a> <code>repo.</code></p>
+<h3 id="audio">Audio</h3>
+<ul>
+<li><a href="https://github.com/acidanthera/AppleALC" target="_blank"><em>AppleALC.kext</em></a> <em>-</em> this kext supports most of the commonly used codecs, with the best quality.</li>
+<li><a href="https://sourceforge.net/projects/voodoohda/files/latest/download?source=files" target="_blank"><em>VoodooHDA.kext</em></a> <em>-</em> should be considered a fallback for codecs not supported by AppleALC or for 15h/16h based systems.</li>
+</ul>
+<h3 id="extra">Extra</h3>
+<ul>
+    <li>
+    <a href="https://cdn.discordapp.com/attachments/566705665616117760/566728101292408877/XLNCUSBFix.kext.zip" target="_blank"><em>XLNCUSBFix.kext</em></a> <em>-</em> might fix USB 2.0 issues on 15h/16h based systems. GenericUSBXHCI.kext might be needed for USB 3.0 issues.</li>
+</ul>
+<p>Depending on what hardware you have in your machine you might need some other kexts. This list is more to be used to give you a general idea, you will probably have to do some google-fu.</p>
+<p>The safest way is to inject these into the system using Clover.</p>
+<pre><code class="lang-text">CLOVER -&gt; EFI -&gt; CLOVER -&gt; kext -&gt; Other
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Setting up Clover for AMD Vanilla">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../installing-clover-on-macos/" class="navigation navigation-next " aria-label="Next page: Installing Clover on macOS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kexts","level":"1.4.1","depth":2,"next":{"title":"Installing Clover on macOS","level":"1.5","depth":1,"path":"installing-clover-on-macos/README.md","ref":"installing-clover-on-macos/README.md","articles":[{"title":"Configuring Clover","level":"1.5.1","depth":2,"path":"installing-clover-on-macos/configuring-clover.md","ref":"installing-clover-on-macos/configuring-clover.md","articles":[]}]},"previous":{"title":"Setting up Clover for AMD Vanilla","level":"1.4","depth":1,"path":"setting-up-clover-for-amd-vanilla/README.md","ref":"setting-up-clover-for-amd-vanilla/README.md","articles":[{"title":"Kexts","level":"1.4.1","depth":2,"path":"setting-up-clover-for-amd-vanilla/kexts.md","ref":"setting-up-clover-for-amd-vanilla/kexts.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sharing":{"google":false,"facebook":false,"twitter":false,"weibo":false,"all":false}},"gitbook":"*"},"file":{"path":"setting-up-clover-for-amd-vanilla/kexts.md","mtime":"2019-04-23T23:01:50.892Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-23T23:26:19.107Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="https://kb.amd-osx.com/guides/gitbook/gitbook.js"></script>
+    <script src="https://kb.amd-osx.com/guides/gitbook/theme.js"></script>
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="https://kb.amd-osx.com/guides/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
